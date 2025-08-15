@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IF ELSE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .login-container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .login-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .login-header h2 {
+            margin: 0;
+            color: #4CAF50;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group input {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-btn {
+            width: 100%;
+            height: 40px;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background-color: #3e8e41;
+        }
+        .result {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <h2>Login</h2>
+        </div>
+        <div class="input-group">
+            <input type="text" id="username" placeholder="Enter your username">
+        </div>
+        <button class="login-btn" onclick="login()">Login</button>
+        <div class="result" id="result"></div>
+
+        <script>
+            function login() {
+                var username = document.getElementById("username").value;
+                if (username == "Adeolu") {
+                    document.getElementById("result").innerHTML = "Welcome Adeolu";
+                    document.getElementById("result").style.color = "green";
+                } else if (username == "Samson") {
+                    document.getElementById("result").innerHTML = "Welcome Samson";
+                    document.getElementById("result").style.color = "green";
+                } else if (username == "Tolu") {
+                    document.getElementById("result").innerHTML = "Welcome Tolu";
+                    document.getElementById("result").style.color = "green";
+                } else {
+                    document.getElementById("result").innerHTML = "Incorrect Username";
+                    document.getElementById("result").style.color = "red";
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
