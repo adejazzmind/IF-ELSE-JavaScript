@@ -1,0 +1,1 @@
+The if-else system is a fundamental control flow structure in programming languages. It allows a program to make decisions and execute different blocks of code based on whether a specified condition evaluates to true or false.
